@@ -1,0 +1,26 @@
+{
+  "name": "chashu",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch build index.ts --target bun --outfile dist/index.js --compile"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/prompts": "^2.4.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "cli-table3": "^0.6.5",
+    "colorette": "^2.0.20",
+    "commander": "^14.0.2",
+    "ora": "^9.0.0",
+    "prompts": "^2.4.2"
+  },
+  "bin": {
+    "chashu": "dist/index.js"
+  }
+}
